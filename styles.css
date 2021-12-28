@@ -97,7 +97,13 @@ ul li a {
   font-weight: bold;
   font-size: 1rem;
   padding: 4vw;
+  transition: all 2s;
 }
+.grid__center:hover{
+ width: 200px;
+ color: white;
+}
+
 .grid__border--1 {
   grid-column-start: 2;
   grid-column-end: 3;
