@@ -5,73 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
   </head>
   <body>
     <header>
-      <div class="logo">  
-        <img
-          src="./assets/Lona 04-1.png"
-          alt="logo restaurante de hamburguesas"
-        />
+      <div class="container">
+        <div class="row">
+          <img
+            class="col-3"
+            src="./assets/Lona 04-1.png"
+            alt="logo restaurante de hamburguesas"
+          />
+        </div>
       </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="./paginas/promociones.html">Promociones</a></li>
-          <li><a href="./paginas/paquetes.html">Paquetes</a></li>
-          <li><a href="./paginas/carta.html">Carta</a></li>
-          <li><a href="./paginas/contacto.html">Contacto</a></li>
-          <li><a href="./paginas/sucursales.html">Sucursales</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./paginas/promociones.html"
+                  >Promociones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paginas/paquetes.html"
+                aria-current="page"
+                >Paquetes</a>                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paginas/carta.html"
+                aria-current="page">Carta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paginas/contacto.html"
+                aria-current="page"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paginas/sucursales.html"
+                aria-current="page"
+                  >Sucursales</a
+                >
+              </li>
+              <li class="nav-item"></li>
+
+             
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="¿Buscabas algo más?"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <div class="hero">
-        <img class="hero__image" src="./assets/burger.jpg" alt="burger photo" />
-        <article class="hero__article">
-          <h1 class="hero__slogan">Nunca has probado nada igual.</h1>
-        
-        </article>
-        <button class="hero__button">
-          <a class="hero__button--text" href="./paginas/carta.html"
-            >ORDENA YA</a
-          >
-        </button>
+      <div class="container">
+        <div class="row">
+          <img src="./assets/burger.jpg" class="col-md-6" alt="burger photo" />
+          <article class="col-md-3">
+            <h1 class="hero__slogan">Nunca has probado nada igual.</h1>
+          </article>
+          <button class="col-md-3">
+            <a class="hero__button--text" href="./paginas/carta.html"
+              >ORDENA YA</a
+            >
+          </button>
+        </div>
       </div>
 
-      <div class="grid">
-        <div class="grid__center">Visítanos y encuentra todas nuestras promociones</div>
-        <div class="grid__border--1"><h2>Promoción 1 </h2> Servilletas gratis</div>
-        <div class="grid__border--2"><h2>Promoción 2 </h2> Tu segunda hamburguesa con 30% de descuento</div>
-        <div class="grid__border--3"><h2>Promoción 3 </h2> Papas gratis en la compra de un combo grande</div>
-        <div class="grid__border--4"><h2>Promoción 4 </h2> Helado gratis llenando la siguiente encuesta</div>
+      <div class="container">
+        <div class="grid__center">
+          Visítanos y encuentra todas nuestras promociones
+        </div>
+        <div class="grid__border--1">
+          <h2>Promoción 1</h2>
+          Servilletas gratis
+        </div>
+        <div class="grid__border--2">
+          <h2>Promoción 2</h2>
+          Tu segunda hamburguesa con 30% de descuento
+        </div>
+        <div class="grid__border--3">
+          <h2>Promoción 3</h2>
+          Papas gratis en la compra de un combo grande
+        </div>
+        <div class="grid__border--4">
+          <h2>Promoción 4</h2>
+          Helado gratis llenando la siguiente encuesta
+        </div>
       </div>
 
-      <section>
+      <section class="container">
         <h2 class="opiniones__titulo">Opiniones de nuestros clientes</h2>
-        <article class="opinion1">
-          <img
-            class="img"
-            src="./assets/hombre.jpg"
-            alt="fotografia hombre"
-            width="300px"
-          /><br />"Lo mejor que he probado en mi vida".
-        </article>
-        <article class="opinion2">
-          <img
-            src="./assets/mujer.jpg"
-            alt="fotografia mujer"
-            width="300px"
-          /><br />"Mi vida era irrelevante antes de consumirlo".
-        </article>
-        <article class="opinion3">
-          <img
-            src="./assets/nino.jpg"
-            alt="fotografia niño"
-            width="300px"
-          /><br />"Por favor, quiero más. ¡Más!".
-        </article>
+        <div class="row">
+          <article class="col-md-4">
+            <img
+              class="img"
+              src="./assets/hombre.jpg"
+              alt="fotografia hombre"
+              width="300px"
+            /><br />"Lo mejor que he probado en mi vida".
+          </article>
+          <article class="col-md-4">
+            <img
+              src="./assets/mujer.jpg"
+              alt="fotografia mujer"
+              width="300px"
+            /><br />"Mi vida era irrelevante antes de consumirlo".
+          </article>
+          <article class="col-md-4">
+            <img
+              src="./assets/nino.jpg"
+              alt="fotografia niño"
+              width="300px"
+            /><br />"Por favor, quiero más. ¡Más!".
+          </article>
+        </div>
       </section>
     </main>
     <footer class="footer">
